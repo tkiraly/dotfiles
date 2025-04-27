@@ -115,7 +115,7 @@ if [ -f ~/.env ]; then
     source ~/.env
 fi
 
-{{- if qe .chezmoi.hostname "cmg-l-pf47x0wv" }}
+{{- if eq .chezmoi.hostname "cmg-l-pf47x0wv" }}
 
 export GIT_TOKEN="$(pass show git-token)"
 export JIRA_TOKEN="$(pass show jira-token)"
