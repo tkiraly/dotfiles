@@ -1,0 +1,21 @@
+[user]
+	name = Tamás Király
+	email = "tamas.kiraly@commsignia.com"
+[submodule]
+	recurse = true
+[core]
+	editor = code -w -n
+[rebase]
+	autosquash = true
+	autostash = true
+[color]
+	ui = auto
+[diff]
+	algorithm = histogram
+[merge]
+	autoStash = true
+[init]
+	defaultBranch = master
+[alias]
+    cf = commit --fixup
+
