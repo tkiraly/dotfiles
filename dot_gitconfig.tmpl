@@ -8,6 +8,7 @@
 [rebase]
 	autosquash = true
 	autostash = true
+	missingCommitsCheck = warn
 [color]
 	ui = auto
 [diff]
@@ -20,5 +21,8 @@
 	cf = commit --fixup
 [pull]
 	rebase = true
+	default = true
 [push]
 	autoSetupRemote = true
+	default = current
+	recurseSubmodules = on-demand
