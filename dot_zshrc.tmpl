@@ -122,3 +122,7 @@ export GIT_TOKEN="$(pass show git-token)"
 export JIRA_TOKEN="$(pass show jira-token)"
 
 {{- end }}
+
+export USER_ID=$(id -u)
+export GROUP_ID=$(id -g)
+
