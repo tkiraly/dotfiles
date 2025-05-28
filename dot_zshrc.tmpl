@@ -122,9 +122,9 @@ export GIT_TOKEN="$(pass show git-token)"
 export JIRA_TOKEN="$(pass show jira-token)"
 
 {{- else }}
-
+if command -v pass >/dev/null 2>&1; then
 export GITLAB_TOKEN="$(pass show GITLAB_TOKEN)"
-
+fi
 {{- end }}
 
 export USER_ID=$(id -u)
